@@ -6,6 +6,6 @@ public class SinglePlayer : MonoBehaviour
     
     public void JoinSingle()
     {
-        SceneManager.LoadScene("SinglePlayer");
+        SceneManager.LoadScene("Singleplayer");
     }
 }

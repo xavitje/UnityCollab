@@ -5,20 +5,12 @@ using UnityEngine;
 public class ObjectMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public Transform transform;
     
-
-    // Start is called before the first frame update
-    void Start()
+    void FixedUpdate()
     {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //rb.AddForce(new Vector3(0f, 0f, -0.2f));
-        rb.AddForce(new Vector3(0f, 0f, -0.2f));;
-        Debug.Log(rb.velocity.ToString());
+        rb.AddForce(new Vector3(0f, 0f, -2f));
+        //rb.velocity = new Vector3(0,0,-1);
+        
     }
 }

@@ -8,11 +8,6 @@ public class followPlayer : MonoBehaviour
     public Vector3 offset;
 
 
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {

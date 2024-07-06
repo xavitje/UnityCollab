@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 2287718630965629475}
   - component: {fileID: 8882235090796492205}
   - component: {fileID: 2696546539847085710}
-  - component: {fileID: 6392284845099741652}
   - component: {fileID: 2456477927683077115}
-  - component: {fileID: 8162856138722399044}
+  - component: {fileID: 4104072448234799496}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6692314951823863073}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.124, y: 1.4, z: 0.585}
-  m_LocalScale: {x: 0.16441973, y: 0.16441973, z: 0.16441973}
+  m_LocalScale: {x: 0.03053432, y: 0.030534318, z: 0.030534318}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,29 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6392284845099741652
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6692314951823863073}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2456477927683077115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -136,7 +112,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &8162856138722399044
+--- !u!114 &4104072448234799496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,10 +121,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6692314951823863073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245b97c6639cbfe42a7b5729f2e8b9a1, type: 3}
+  m_Script: {fileID: 11500000, guid: a98db92126f680c428a6c264b66de44d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2456477927683077115}
-  bullet: {fileID: 6692314951823863073}
-  target: {fileID: 0}
-  offset: 0.124

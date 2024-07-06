@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 0.1}
+  m_AnchoredPosition: {x: 5, y: 0.117}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8828086101208881106
@@ -354,13 +354,12 @@ GameObject:
   - component: {fileID: 1346792646947281652}
   - component: {fileID: 6104002080086949758}
   - component: {fileID: 4562595258689328146}
-  - component: {fileID: 7052581918229576884}
   - component: {fileID: 6397017331191443983}
   - component: {fileID: 3459189803976361828}
   - component: {fileID: 8802510434076616538}
   m_Layer: 0
   m_Name: Red-Target
-  m_TagString: GameObject
+  m_TagString: red-target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -446,34 +445,13 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &7052581918229576884
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232990628705364919}
-  m_Material: {fileID: 13400000, guid: fade4cb187346994fb458a603c561d3d, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 10, y: 2.2204466e-16, z: 10.000002}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &6397017331191443983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8802510434076616538}
-  transform: {fileID: 0}
 --- !u!114 &3459189803976361828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,8 +478,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 0}
+  berekenscore1: 0
+  scoreText: 
   currentScore: 0
   number: {fileID: 4256857800553148967}
+  test: {fileID: 0}
+  m_MainTexture: {fileID: 2800000, guid: 2252a7b5bd78d4517978d07b7cd2dd6d, type: 3}
+  m_Normal: {fileID: 2800000, guid: 8531f30a541644e4da94a62e4d242516, type: 3}
+  m_MainMat: {fileID: 2100000, guid: 4d4cdc402ed274ec8a2d900338104565, type: 2}
+  m_NormalMat: {fileID: 2100000, guid: 789933f6319f3413b833bc178149622d, type: 2}
+  deaths1: 0
 --- !u!54 &8802510434076616538
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -680,7 +665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4041758215421734952}
-  transform: {fileID: 0}
 --- !u!114 &6911102550759271170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 0}
+  berekenscore1: 0
+  scoreText: 
   currentScore: 0
   number: {fileID: 6473321961859040681}
 --- !u!1 &6163509450944329443

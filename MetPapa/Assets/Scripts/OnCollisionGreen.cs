@@ -5,6 +5,9 @@ using UnityEngine.UI;
 public class OnCollisionGreen : MonoBehaviour
 {
     public Text score;
+    public float berekenscore1;
+    float berekenscore2;
+    public string scoreText;
     public float currentScore = 0;
     public TextMeshPro number;
     int highScore;
@@ -18,6 +21,14 @@ public class OnCollisionGreen : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag == "bullet")
+        {
+            scoreText = number.text;
+            float berekenscore1 = float.Parse(scoreText);
+            berekenscore2 = berekenscore1 + 1;
+            number.text = berekenscore2.ToString();
+            
+        }
         if (other.gameObject.tag == "Player")
         {
             
