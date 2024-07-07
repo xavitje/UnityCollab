@@ -1425,6 +1425,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2456477927683077115, guid: c31ba2676bbcfce4182e9356a03a2fed, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456477927683077115, guid: c31ba2676bbcfce4182e9356a03a2fed, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
